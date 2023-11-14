@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">
+                <a class="navbar-brand text-white" href="index.html">
                     <img src="../media/codoacodo.png" alt="codo" width="170px">
                     Conf Bs As
                 </a>
@@ -27,21 +27,21 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">La Conferencia</a>
+                            <a class="nav-link active text-white" aria-current="page" href="../index.html">La Conferencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white-50" aria-current="page" href="#">Los Oradores</a>
+                            <a class="nav-link active text-white-50" aria-current="page" href="../index.html">Los Oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white-50" aria-current="page" href="#">El lugar y la
+                            <a class="nav-link active text-white-50" aria-current="page" href="../index.html">El lugar y la
                                 fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white-50" aria-current="page" href="#">Convértete en
+                            <a class="nav-link active text-white-50" aria-current="page" href="../index.html">Convértete en
                                 orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-success" aria-current="page" href="#">Comprar tickets</a>
+                            <a class="nav-link active text-success" aria-current="page" href="tickets.html">Comprar tickets</a>
                         </li>
                     </ul>
                 </div>
@@ -85,7 +85,7 @@
                         <H3>VALOR DE TICKET $200</H3>
 
                     </div>
-                    <form class="row g-3">
+                    <form class="row g-3 formulario">
                         <div class="col-md-6">
                           <input type="text" class="form-control" placeholder="Nombre" id="inputNombre">
                         </div>
@@ -96,13 +96,14 @@
                           <input type="email" class="form-control" placeholder="Email" id="inputEmail">
                         </div>
                         <div class="col-md-6">
-                          <label for="inputAddress2" class="form-label">Cantidad</label>
-                          <input type="text" class="form-control" id="inputCantidad" placeholder="Cantidad">
+                          <label for="inputCantidad" class="form-label">Cantidad</label>
+                          <input type="number" class="form-control" id="inputCantidad" placeholder="Cantidad">
                         </div>
                         <div class="col-md-6">
-                          <label for="inputState" class="form-label">Categoria</label>
-                          <select id="inputState" class="form-select">
-                            <option selected>Estudiante</option>
+                          <label for="inputCategoria" class="form-label">Categoria</label>
+                          <select id="inputCategoria" class="form-select">
+                            <option selected>Seleccionar</option>
+                            <option>Estudiante</option>
                             <option>Trainee</option>
                             <option>Junior</option>
                           </select>
@@ -110,7 +111,7 @@
                         <div class="col-md-12">
                             <div class="card celeste text-black">
                                 <div class="card-body">
-                                    <p class="card-title text-start fs-6">Total a Pagar: $</p>
+                                    <p class="card-title text-start fs-6" id="aPagar">Total a Pagar: $</p>
          
                                 </div>
                             </div>
@@ -121,7 +122,7 @@
                         <div class="col-md-6 d-grid">
                           <button type="submit" class="btn verdeclaro text-white btn-success">Resumen</button>
                         </div>
-                      </form>
+                    </form>
                     <br><br>
                 </div>
             </div>
